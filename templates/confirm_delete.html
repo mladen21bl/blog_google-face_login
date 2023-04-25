@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Post obrisi
+{% endblock %}
+
+{% block content %}
+<div id="create_form" class="conteiner">
+  {% for x in got %}
+  <h1>Da li si siguran da želiš da obrišeš ovaj post?</h1>
+  <a  id="post_da" href="delete_confirm" class="btn btn-danger" style="color:white;">Da</a>
+  <a id="post_ne" class="btn btn-danger" style="color:white; background-color:green;" href="{{ url_for('lista_postova') }}">Ne</a>
+  {% endfor %}
+
+</div>
+{% endblock %}

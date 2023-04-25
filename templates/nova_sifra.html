@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Nova sifra
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="container" id="sifra_kontejner">
+  <div class="container" id="sifra_kontejner2">
+    <form class="" action="" method="post">
+      <p>STARA ŠIFRA:</p>
+      <input type="text" name="" value="{{ sifra[3] }}">
+      <p>NOVA ŠIFRA:</p>
+      <input type="text" name="ns" value="" required>
+      <input type="submit" name="" value="Sačuvaj" style="background-color:green; color:white;">
+    </form>
+    <a href="{{ url_for('home') }}" class="btn btn-primary" id="sifra_nazad">Nazad</a>
+  </div>
+</div>
+
+
+
+{% endblock %}

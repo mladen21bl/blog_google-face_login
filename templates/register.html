@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <p id="register">Unsei podatke</p>
+  <form class="" action="" method="post">
+    <p  id="ime2">Ime:</p>
+    <input type="text" name="name" value="" required>
+    <p id="email">Email:</p>
+    <input type="email" name="email" value="" required>
+    <p id="sifra2">Šifra:</p>
+    <input type="password" name="password" value="" required>
+    <input type="submit" name="" value="Napravi nalog" id="button2">
+  </form>
+  {% if msg %}
+  <h3>{{ msg }}</h3>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create page
+{% endblock %}
+
+{% block content %}
+{% for x in edit %}
+
+<div id="create_form" class="conteiner">
+  <form class="" action="#" method="post">
+    <p>Naslov:</p>
+    <input type="text" name="naslov" value="{{ x.title }}">
+    <p>Tekst:</p>
+    <textarea rows="16" cols="80" name="tekst" value="">{{ x.text }}</textarea><br>
+    <input type="submit" name="" value="Objavi">
+  </form>
+</div>
+
+
+{% endfor %}
+{% endblock %}

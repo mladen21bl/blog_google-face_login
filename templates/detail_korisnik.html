@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title %}Korisnik detail{% endblock %}
+
+{% block content %}
+
+  {% for a in korisnik %}
+<div id="detail_korisnika" class="container">
+
+  <h3>Informacije o korisniku {{ a[1] }}</h3>
+  <div id="detail_korisnik2">
+    <p>ID: {{ a[0] }}</p>
+    <p>IME: {{ a[1] }}</p>
+    <p>EMAIL: {{ a[2] }}</p>
+    <p>ŠIFRA: {{ a[3] }}<a href="/{{ a[0] }}/nova_sifra" class="btn btn-primary" id="sifra_dugme">Izmjeni šifru</a></p>
+    <a href="/{{ a[0] }}/user_delete" class="btn btn-danger" id="obrisi_korisnika_dugme">Obriši korisnika</a>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,283 @@
+body{
+  background-color: #f0e07a;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+#username{
+  margin-left: 600px;
+}
+#naslov_liste{
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+#naslov_liste:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+
+#skup{
+  text-align: center;
+}
+
+#post_detail{
+  margin-left: 100px;
+}
+
+#lista_korisnika{
+  margin-top: 60px;
+}
+#ko{
+  color: red;
+  margin-left: 130px;
+}
+
+#naslov{
+  margin-top: 200px;
+  font-family: 'Brush Script MT', cursive;
+}
+
+#edit{
+  background-color: #d6e835;
+}
+
+#cr1{
+  font-style: oblique;
+  font-weight: bold;
+}
+
+
+#author{
+  color: blue;
+  margin-left: 130px;
+}
+#one{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2.5em;
+  color: #4a2319;
+}
+
+#komentarisi{
+  background-color: #143d1e;
+  margin-left: 130px;
+}
+#naslov_komentara{
+  margin-left: 130px;
+}
+#two{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+#twoa{
+  color: #4a2319;
+}
+
+#three{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#four{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#obri{
+  margin-left: 130px;
+  margin-bottom: 40px;
+  background-color:#8a121e;
+}
+#create_form{
+  text-align: center;
+  color: black;
+  margin-top: 60px;
+}
+
+#button{
+  color: white;
+  background-color: #214023;
+  cursor: pointer;
+  border: 0;
+  border-radius: 14px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 150px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+#button2{
+  color: white;
+  background-color: #214023;
+  cursor: pointer;
+  border: 0;
+  border-radius: 14px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 150px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+}
+
+
+#lista{
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin-top: 80px;
+}
+
+#prijava{
+  margin-left: 40px;
+}
+
+#register{
+  font-weight: bold;
+}
+
+#login{
+  font-weight: bold;
+}
+
+#xx{
+  font-size: 1.8em;
+  color: #4a2319;
+}
+
+#ime{
+  color: #801404;
+  font-weight: bold;
+}
+
+#ime2{
+  color: #801404;
+  font-weight: bold;
+}
+
+#sifra{
+  color: #801404;
+  font-weight: bold;
+}
+
+#sifra2{
+  color: #801404;
+  font-weight: bold;
+}
+
+#email{
+  color: #801404;
+  font-weight: bold;
+}
+
+#naslov{
+  text-align: center;
+  font-size: 4em;
+  font-style: oblique;
+}
+
+#ed{
+  background-color: #289946;
+  color: white;
+  margin-left: 30px;
+}
+
+#comment_form{
+  margin-left: 130px;
+  margin-top: 30px;
+}
+
+#detail_korisnika{
+  text-align: center;
+  margin-top: 130px;
+}
+
+#detail_korisnik2{
+  font-size: 2em;
+  text-align: left;
+  margin-left: 300px;
+}
+
+#sifra_dugme{
+  margin-left: 30px;
+}
+
+#obrisi_korisnika_dugme{
+  margin-top: 40px;
+}
+
+#sifra_kontejner{
+  text-align: center;
+  margin-top: 130px;
+}
+
+#sifra_kontejner2{
+  font-size: 1.3em;
+  text-align: left;
+  margin-left: 300px;
+}
+
+#sifra_nazad{
+  margin-top: 30px;
+}
+
+#korisnik_da{
+  margin-right: 10px;
+}
+
+#korisnik_ne{
+  margin-left: 10px;
+  width: 70px;
+}
+
+#post_da{
+  margin-right: 10px;
+  width: 70px;
+}
+
+#post_ne{
+  margin-left: 10px;
+  width: 70px;
+}
+#naslov{
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 80px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow:
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey
+}
+
+#navbarNav{
+  font-family: monospace;
+}

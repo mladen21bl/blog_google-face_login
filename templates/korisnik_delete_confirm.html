@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Korisnik obrisi
+{% endblock %}
+
+{% block content %}
+<div id="create_form" class="conteiner">
+
+    <h3>Da li zelis da obrišeš korisnika iz baze?</h3>
+    <form class="" action="" method="post">
+      <input type="submit" name="" class="btn btn-danger" value="Obriši" id="korisnik_da">
+      <a href="{{ url_for('lista_korisnika') }}" class="btn btn-danger" style="background-color:green;" id="korisnik_ne">Ne</a>
+    </form>
+
+
+
+</div>
+{% endblock %}

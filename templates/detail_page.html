@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Detail page
+{% endblock %}
+
+{% block content %}
+
+{% for a in detail %}
+<div id="post_detail" class="container">
+  <h1 id='one'>{{ a.title }}</h1>
+  <p id='two'>Od autora: {{ a.autor }}</p>
+  <p id='two' style="color:brown;">{{ a.text }}</p>
+
+    {% if 'loggedin' in session %}
+      {% if a.odobren %}
+      <h2 id="skup"><a href="{{ a._id }}/delete" class="btn btn-danger">Obriši</a>
+      <a id="edit" href="{{ a._id }}/edit" class="btn btn-warning">Edituj</a></h2>
+      {% else %}
+        <h2 id="skup"><a href="{{ a._id }}/delete" class="btn btn-danger">Obriši</a>
+        <a id="objava" href="/{{ a._id }}/odobri_post" class="btn btn-warning">Objavi post</a>
+      {% endif %}
+    {% endif %}
+
+
+    {% if a.odobren %}
+    <h4 id="naslov_komentara">KOMENTARI:</h4>
+    {% for z in a.comments %}
+      <p id="ko" >{{ z }}</p>
+      <p id ="author" >autor: {{ z.author }}</p>
+      {% if 'loggedin' in session %}
+        <a id="obri" href="{{ z._id }}/obrisi_komentar" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>Obriši komentar</a>
+      {% endif %}
+    {% endfor %}
+
+    <h2><a  id="komentarisi" href="{{ a._id }}/komentar" style="color:white;" class="btn btn-warning">Komentariši</a></h2>
+    {% endif %}
+</div>
+{% endfor %}
+
+{% endblock %}

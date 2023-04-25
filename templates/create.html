@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create page
+{% endblock %}
+
+{% block content %}
+<div id="create_form" class="conteiner">
+  <form action="#" method="post">
+    <p id="cr1">Naslov:</p>
+    <input type="text" name="naslov" required>
+    <p id="cr1">Tekst:</p>
+    <textarea rows="16" cols="80" name="tekst" required></textarea><br>
+    <p id="cr1">Autor:</p>
+    <input type="text" name="autor" required>
+    <input type="submit" class="btn btn-danger" value="Objavi">
+  </form>
+</div>
+
+
+{% endblock %}

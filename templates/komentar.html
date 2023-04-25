@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create page
+{% endblock %}
+
+{% block content %}
+
+
+<div id="comment_form" class="conteiner">
+    <form action="" method="post">
+      <p>Komentar:</p>
+      <textarea rows="4" cols="50" name="kom" required></textarea>
+      <p>autor:</p>
+      <input type="text" name="aut" required>
+      <input type="submit" class="btn btn-danger" value="Objavi">
+    </form>
+</div>
+
+{% endblock %}

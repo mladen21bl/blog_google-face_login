@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Lista Draftova
+{% endblock %}
+
+
+
+{% block content %}
+
+<div id="lista" class="conteiner">
+  <ul>
+    {% if values %}
+    {% for a in values %}
+    <h2 id="naslov_liste"><a id="xx" style="text-decoration:none" href="{{ a._id }}">{{ a.title }}</a></h2>
+    <p>komentari: {{ a.comments|length }}</p>
+    {% endfor %}
+    {% else %}
+      <h2 id="naslov_liste" style="color:green;">TRENUTNO NEMA POSTOVA</h2>
+    {% endif %}
+  </ul>
+
+</div>
+{% endblock %}

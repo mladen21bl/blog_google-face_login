@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}Lista korisnika{% endblock %}
+
+{% block content %}
+<div class="container" id="lista_korisnika">
+  <center>
+  <table id="table">
+    <tr id="one">
+      <td width=70px;>ID:</td>
+      <td width=70px;>IME:</td>
+      <td width=70px;>ŠIFRA:</td>
+    </tr>
+    {% for x in maslina %}
+    <tr id="tr" height=70px;>
+      <td id="two" width=150px;><a id="twoa" href="{{ x[0] }}/detail_user" style="text-decoration:none">{{ x[0] }}</a></td>
+      <td id="three" width=150px;>{{ x[1] }}</td>
+      <td id="four" width=150px;>{{ x[3] }}</td>
+    </tr>
+    {% endfor %}
+  </table></center>
+</div>
+
+
+{% endblock %}

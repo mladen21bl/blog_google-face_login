@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <p id="login">Login</p>
+  <form class="" action="" method="post">
+    <p  id="ime">Ime:</p>
+    <input type="text" name="name" value="" unique>
+    <p id="sifra">Šifra:</p>
+    <input type="password" name="password" value="">
+    <input type="submit" name="" value="Uloguj se" id="button">
+  </form>
+  {% if msg %}
+  <h3>{{ msg }}</h3>
+  {% endif %}
+</div>
+
+{% endblock %}
