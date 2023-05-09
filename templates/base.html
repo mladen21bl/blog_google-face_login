@@ -18,15 +18,16 @@
           <a class="dropdown-item" href="{{ url_for('home') }}">POČETNA STRANA</a>
           <a class="dropdown-item" href="{{ url_for('lista_postova') }}">POSTOVI</a>
           <a class="dropdown-item" href="{{ url_for('create') }}">NAPIŠI POST</a>
-        {% if 'loggedin' in session %}
-          <a class="dropdown-item" href="{{ url_for('lista_draftova') }}">DRAFTOVI</a>
-          <a class="dropdown-item" href="{{ url_for('lista_korisnika') }}">KORISNICI</a>
-          <a class="dropdown-item" href="{{ url_for('logout') }}">LOGOUT</a>
-          <a class="dropdown-item" id="username" href="">DOBRODOŠAO: {{ session['username'] }}</a>
-        {% else %}
-          <a class="dropdown-item" href="{{ url_for('login') }}">LOGIN</a>
-          <a class="dropdown-item" href="{{ url_for('register') }}">REGISTURJ SE</a>
-        {% endif %}
+          {% if request.cookies.get('session_id') %}
+            <a class="dropdown-item" href="{{ url_for('lista_draftova') }}">DRAFTOVI</a>
+            <a class="dropdown-item" href="{{ url_for('lista_korisnika') }}">KORISNICI</a>
+            <a class="dropdown-item" href="{{ url_for('logout', session_id=session_id) }}" method="get">LOGOUT</a>
+            <a class="dropdown-item" id="username" href="">DOBRODOŠAO: {{ request.cookies.get('username') }}</a>
+            {% else %}
+            <a class="dropdown-item" href="{{ url_for('login') }}">LOGIN</a>
+            <a class="dropdown-item" href="{{ url_for('register') }}">REGISTURJ SE</a>
+            {% endif %}
+
         </ul>
       </div>
     </nav>

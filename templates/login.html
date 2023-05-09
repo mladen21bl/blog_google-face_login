@@ -4,15 +4,26 @@
 
 {% block content %}
 
-<div class="container">
+<div id="login_div" class="container">
   <p id="login">Login</p>
   <form class="" action="" method="post">
-    <p  id="ime">Ime:</p>
-    <input type="text" name="name" value="" unique>
-    <p id="sifra">Šifra:</p>
-    <input type="password" name="password" value="">
-    <input type="submit" name="" value="Uloguj se" id="button">
+    <p  id="ime" style="margin-left:105px;">Ime:</p>
+    <input type="text" name="name" value="" style="width:270px;" required>
+    <p id="sifra" style="margin-left:105px;">Šifra:</p>
+    <input type="password" name="password" value="" style="width:270px;" required><br>
+    <input type="submit" name="" value="Uloguj se" id="button" style="margin-top:30px;margin-left:60px;">
   </form>
+  <p style="font-size:1.2em; margin-top: 35px; margin-left:125px;">ili</p>
+  <a href='google_login'><button id="google_button"><link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<div class="google-btn">
+  <div class="google-icon-wrapper">
+    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+  </div>
+  <p class="btn-text"><b>Uloguj se putem Google-a</b></p>
+</div></button></a><br>
+
+<a href="/fb-login"><button id="face_button">Uloguj se putem Facebook-a</button></a>
   {% if msg %}
   <h3>{{ msg }}</h3>
   {% endif %}

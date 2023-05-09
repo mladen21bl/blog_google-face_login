@@ -281,3 +281,68 @@ body{
 #navbarNav{
   font-family: monospace;
 }
+
+
+
+.google-btn {
+  width: 280px;
+  height: 40px;
+  background-color: white;
+  border-radius: 2px;
+  margin-right: 0px;
+  .google-icon-wrapper {
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 42px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: white;
+  }
+  .google-icon {
+    position: center;
+    margin-top: 4px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .btn-text {
+    float: right;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 25px;
+
+    color: black;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+  }
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+#google_button{
+  margin-top: 30px;
+  background-color: white;
+  width: 290px;
+  height: 60px;
+  border-radius: 17px;
+}
+
+#face_button{
+  margin-top: 30px;
+  background-color: #3b5998;
+  color: white;
+  width: 290px;
+  height: 60px;
+  border-radius: 17px;
+}
+
+#login_div{
+  margin-left: 600px;
+}
